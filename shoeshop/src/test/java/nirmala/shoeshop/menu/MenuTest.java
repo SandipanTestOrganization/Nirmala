@@ -1,10 +1,12 @@
 package nirmala.shoeshop.menu;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import nirmala.shoeshop.browser.Browser;
 import nirmala.shoeshop.pages.HomePage;
+import nirmala.shoeshop.pages.WomenPage;
 
 public class MenuTest {
 	@Before
@@ -20,80 +22,82 @@ public class MenuTest {
 		HomePage.GoTo();
 		TopNavigationBar.Women.Select();
 		//Write verify
+		Assert.assertTrue(WomenPage.IsAt());
 		TopNavigationBar.Women.Heels.Select();
-		//write verify
+		Assert.assertTrue(WomenPage.HeelsPage().IsAt());
 		TopNavigationBar.Women.Heels.HighHeels.Select();
+		Assert.assertTrue(WomenPage.HeelsPage().HighHeelsPage().IsAt());
 		// write verify
-		TopNavigationBar.Women.Heels.LowHeels.Select();
+		//TopNavigationBar.Women.Heels.LowHeels.Select();
 		// write verify
-		TopNavigationBar.Women.Heels.PointedHeels.Select();
+		//TopNavigationBar.Women.Heels.PointedHeels.Select();
 		// write verify
-		TopNavigationBar.Women.Heels.WedgeHeels.Select();
+		//TopNavigationBar.Women.Heels.WedgeHeels.Select();
 		// write verify
-		TopNavigationBar.Women.Sandals.Select();
+		//TopNavigationBar.Women.Sandals.Select();
 		// write verify
-		TopNavigationBar.Women.Sandals.Regular.Select();
+		//TopNavigationBar.Women.Sandals.Regular.Select();
 		// write verify
-		TopNavigationBar.Women.Sandals.Kitten.Select();
+		//TopNavigationBar.Women.Sandals.Kitten.Select();
 		// write verify
-		TopNavigationBar.Women.Shoes.Select();
+		//TopNavigationBar.Women.Shoes.Select();
 		// write verify
-		TopNavigationBar.Women.Shoes.CasualShoes.Select();
+		//TopNavigationBar.Women.Shoes.CasualShoes.Select();
 		// write verify
-		TopNavigationBar.Women.Shoes.SportsShoes.Select();
+		//TopNavigationBar.Women.Shoes.SportsShoes.Select();
 		// write verify
-		TopNavigationBar.Women.Shoes.FormalShoes.Select();
+		//TopNavigationBar.Women.Shoes.FormalShoes.Select();
 		// write verify
-		TopNavigationBar.Women.Shoes.EthnicShoes.Select();
+		//TopNavigationBar.Women.Shoes.EthnicShoes.Select();
 		// write verify		
-		TopNavigationBar.Men.Shoes.Select();
+		//TopNavigationBar.Men.Shoes.Select();
 		// write verify
-		TopNavigationBar.Men.Shoes.CasualShoes.Select();
+		//TopNavigationBar.Men.Shoes.CasualShoes.Select();
 		// write verify
-		TopNavigationBar.Men.Shoes.FormalShoes.Select();
+		//TopNavigationBar.Men.Shoes.FormalShoes.Select();
 		// write verify
-		TopNavigationBar.Men.Shoes.SemiFormals.Select();
+		//TopNavigationBar.Men.Shoes.SemiFormals.Select();
 		// write verify
-		TopNavigationBar.Men.Sneakers.Select();
+		//TopNavigationBar.Men.Sneakers.Select();
 		// write verify
-		TopNavigationBar.Men.Sneakers.Regulars.Select();
+		//TopNavigationBar.Men.Sneakers.Regulars.Select();
 		// write verify
-		TopNavigationBar.Men.Atheletics.Select();
+		//TopNavigationBar.Men.Atheletics.Select();
 		// write verify
-		TopNavigationBar.Men.Atheletics.OutDoorAndHikingShoes.Select();
+		//TopNavigationBar.Men.Atheletics.OutDoorAndHikingShoes.Select();
 		// write verify
-		TopNavigationBar.Men.Atheletics.RunningShoes.Select();
+		//TopNavigationBar.Men.Atheletics.RunningShoes.Select();
 		// write verify
-		TopNavigationBar.Men.Atheletics.InDoorSportsShoes.Select();
+		//TopNavigationBar.Men.Atheletics.InDoorSportsShoes.Select();
 		// write verify
-		TopNavigationBar.Men.Atheletics.TrainingShoes.Select();
+		//TopNavigationBar.Men.Atheletics.TrainingShoes.Select();
 		// write verify
-		TopNavigationBar.Men.Lofers.Select();
+		//TopNavigationBar.Men.Lofers.Select();
 		// write verify
-		TopNavigationBar.Kids.Boys.Select();
+		//TopNavigationBar.Kids.Boys.Select();
 		// write verify
-		TopNavigationBar.Kids.Boys.Boots.Select();
+		//TopNavigationBar.Kids.Boys.Boots.Select();
 		// write verify
-		TopNavigationBar.Kids.Boys.CausualShoes.Select();
+		//TopNavigationBar.Kids.Boys.CausualShoes.Select();
 		// write verify
-		TopNavigationBar.Kids.Boys.FlipFlops.Select();
+		//TopNavigationBar.Kids.Boys.FlipFlops.Select();
 		// write verify
-		TopNavigationBar.Kids.Boys.Sandels.Select();
+		//TopNavigationBar.Kids.Boys.Sandels.Select();
 		// write verify
-		TopNavigationBar.Kids.Boys.SchoolShoes.Select();
+		//TopNavigationBar.Kids.Boys.SchoolShoes.Select();
 		// write verify
-		TopNavigationBar.Kids.Boys.SportsShoes.Select();
+		//TopNavigationBar.Kids.Boys.SportsShoes.Select();
 		// write verify
-		TopNavigationBar.Kids.Girls.Select();
+		//TopNavigationBar.Kids.Girls.Select();
 		// write verify
-		TopNavigationBar.Kids.Girls.Sandels.Select();
+		//TopNavigationBar.Kids.Girls.Sandels.Select();
 		// write verify	
-		TopNavigationBar.Kids.Girls.Clogs.Select();
+		//TopNavigationBar.Kids.Girls.Clogs.Select();
 		// write verify	
-		TopNavigationBar.Kids.Girls.FlatsAndBellies.Select();
+		//TopNavigationBar.Kids.Girls.FlatsAndBellies.Select();
 		// write verify	
-		TopNavigationBar.Kids.Girls.SportsAndCasualShoes.Select();
+		//TopNavigationBar.Kids.Girls.SportsAndCasualShoes.Select();
 		// write verify	
-		TopNavigationBar.Kids.Kid.Select();		
+		//TopNavigationBar.Kids.Kid.Select();		
 	}
 }

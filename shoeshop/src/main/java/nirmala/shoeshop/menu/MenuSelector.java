@@ -111,6 +111,7 @@ public class MenuSelector {
 			default:
 				break;
 			}
+			break;
 		case MEN:
 			Actions menAction = new Actions(Browser.Driver()).moveToElement(waitForPageUntilElementIsVisible(By.xpath(men_xPath), maxSecond));
 			menAction.build().perform();
@@ -157,6 +158,7 @@ public class MenuSelector {
 			default:
 				break;
 			}
+			break;
 		case KIDS:
 			Actions kidsAction = new Actions(Browser.Driver()).moveToElement(waitForPageUntilElementIsVisible(By.xpath(kids_xPath), maxSecond));
 			kidsAction.build().perform();
@@ -205,7 +207,8 @@ public class MenuSelector {
 				break;
 			default:
 				break;			
-			}		
+			}	
+			break;
 		} 
 	}
 }

@@ -13,11 +13,10 @@ public class HeaderPage {
 	public void SelectSignIn() {
 		// TODO Auto-generated method stub
 		// Find the sign in button and click it.
-		waitForPageUntilElementIsVisible(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a"), maxSecond).click();
-		
+		waitForPageUntilElementIsVisible(By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a"), maxSecond).click();		
 	}
 	
-	public  WebElement waitForPageUntilElementIsVisible(By locator, int maxSecond){
+	public WebElement waitForPageUntilElementIsVisible(By locator, int maxSecond){
 		return (new WebDriverWait(Browser.Driver(), maxSecond))
 				.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	} 
