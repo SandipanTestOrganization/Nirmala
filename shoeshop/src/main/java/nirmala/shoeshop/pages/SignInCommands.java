@@ -1,11 +1,7 @@
 package nirmala.shoeshop.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import nirmala.shoeshop.browser.Browser;
+import nirmala.shoeshop.utility.Utility;
 
 public class SignInCommands {
 
@@ -24,16 +20,11 @@ public class SignInCommands {
 	public void Login() {
 		// TODO Auto-generated method stub
 		//Find username and put username
-		waitForPageUntilElementIsVisible(By.id("email"), maxSecond).sendKeys(username);
+		Utility.waitForPageUntilElementIsVisible(By.id("email"), maxSecond).sendKeys(username);
 		// Find password and put password
-		waitForPageUntilElementIsVisible(By.id("passwd"), maxSecond).sendKeys(password);
+		Utility.waitForPageUntilElementIsVisible(By.id("passwd"), maxSecond).sendKeys(password);
 		// find sign in button and click
-		waitForPageUntilElementIsVisible(By.id("SubmitLogin"), maxSecond).click();
+		Utility.waitForPageUntilElementIsVisible(By.id("SubmitLogin"), maxSecond).click();
 		
 	}
-	
-	public  WebElement waitForPageUntilElementIsVisible(By locator, int maxSecond){
-		return (new WebDriverWait(Browser.Driver(), maxSecond))
-				.until(ExpectedConditions.visibilityOfElementLocated(locator));
-	} 
 }
