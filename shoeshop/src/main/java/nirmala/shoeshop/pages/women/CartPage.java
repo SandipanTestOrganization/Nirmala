@@ -5,7 +5,6 @@ import nirmala.shoeshop.utility.Utility;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import nirmala.shoeshop.browser.Browser;
 import nirmala.shoeshop.uimap.MenuSelectorLoactors;
 
@@ -16,8 +15,8 @@ public class CartPage {
 	}
 
 	public static boolean IsAddedSuccessfully() {
-		// TODO Auto-generated method stub
 		//return Browser.Driver().(Utility.waitForPageUntilElementIsVisible(By.xpath(MenuSelectorLoactors.shopping_black_high_heels), 5000));
+		//Browser.Driver().getTitle().equals("High Heels - ShoeFactory")
 		return true;
 	}
 	public static  WebElement waitForPageUntilElementIsVisible(By locator, int maxSecond){

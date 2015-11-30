@@ -18,7 +18,6 @@ public class SignInCommands {
 	}
 
 	public void Login() {
-		// TODO Auto-generated method stub
 		//Find username and put username
 		Utility.waitForPageUntilElementIsVisible(By.id("email"), maxSecond).sendKeys(username);
 		// Find password and put password

@@ -15,8 +15,7 @@ import nirmala.shoeshop.pages.SignInPage;
 public class SigninSignOutTest {
 
 	@Before
-	public void Init()
-	{
+	public void Init(){
 		Browser.Open();
 	}
 	

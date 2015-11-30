@@ -53,6 +53,8 @@ public class MenuSelector {
 	static String kids_kid_xPath = "/html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[3]/ul/li[3]/a";*/
 	
 	static int maxSecond = 5000;
+	
+	
 	public static void Select(MenuBar topMenuItem, SubMenu subMenuItem) {                      
 		switch (topMenuItem) {
 		case WOMEN:
