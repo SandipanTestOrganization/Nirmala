@@ -4,7 +4,6 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
 import nirmala.shoeshop.browser.Browser;
 import nirmala.shoeshop.menu.TopNavigationBar;
 //import nirmala.shoeshop.menu.TopNavigationBar.Women.Heels.HighHeels;

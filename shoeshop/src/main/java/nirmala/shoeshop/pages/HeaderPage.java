@@ -2,7 +2,6 @@ package nirmala.shoeshop.pages;
 
 import org.openqa.selenium.By;
 import nirmala.shoeshop.utility.Utility;
-import nirmala.shoeshop.browser.Browser;
 
 public class HeaderPage {
 	

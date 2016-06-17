@@ -6,7 +6,7 @@ public class TopNavigationBar {
 		public static void Select() {
 			MenuSelector.Select(MenuBar.WOMEN, MenuBar.SubMenu.NONE);	
 		}
-		public static class Heels{				
+		public static class Heels{
 			public static void Select() {
 				MenuSelector.Select(MenuBar.WOMEN, MenuBar.SubMenu.WOMEN_HEELS);
 			}

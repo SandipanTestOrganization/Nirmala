@@ -19,6 +19,5 @@ public class HomePage {
 	public static HeaderPage Header() {
 		HeaderPage headerPage = new HeaderPage();
 		return headerPage;
-	}
-	
+	}	
 }
